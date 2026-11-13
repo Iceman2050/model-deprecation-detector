@@ -1,0 +1,7 @@
+# Fixture v1 — config references.
+providers:
+  google:
+    # Retired 2025-09-29 (Gemini API changelog).
+    model: gemini-1.5-flash
+    # No entry in the bundled lifecycle table.
+    fallback_model: gemini-2.5-flash

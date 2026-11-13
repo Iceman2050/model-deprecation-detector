@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "model-deprecation-detector"
+version = "0.1.0"
+description = "Scan a codebase for LLM model references and flag deprecated or retired model ids against a dated, sourced lifecycle table."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Ingenious AI" }]
+keywords = ["llm", "model-deprecation", "model-lifecycle", "static-analysis", "mlops"]
+
+[project.scripts]
+model-deprecation-detector = "model_deprecation_detector.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["model_deprecation_detector*"]
+
+[tool.setuptools.package-data]
+model_deprecation_detector = ["data/*.json"]

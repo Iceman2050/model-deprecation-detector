@@ -1,0 +1,76 @@
+{
+  "by_status": {
+    "deprecated": [
+      "claude-sonnet-4-5-20250929",
+      "gpt-4o"
+    ],
+    "no_lifecycle_entry": [
+      "gemini-2.5-flash",
+      "gpt-5.6-sol"
+    ],
+    "retired": [
+      "claude-2.1",
+      "claude-instant-1.2",
+      "gemini-1.5-flash",
+      "gpt-4-0314",
+      "text-davinci-003"
+    ]
+  },
+  "distinct_model_ids": 9,
+  "files_scanned": 5,
+  "fixture_version": "v1",
+  "note": "Expected results of scanning sample-app with --today 2026-11-13 against lifecycle table 2026.11.0. Verified by tests/test_detector.py on every run.",
+  "notices": [
+    {
+      "model_id": "claude-2.1",
+      "provider": "Anthropic",
+      "status_to": "retired",
+      "successor": "claude-opus-4-8",
+      "sunset_date": "2025-07-21"
+    },
+    {
+      "model_id": "claude-instant-1.2",
+      "provider": "Anthropic",
+      "status_to": "retired",
+      "successor": "claude-haiku-4-5-20251001",
+      "sunset_date": "2024-11-06"
+    },
+    {
+      "model_id": "claude-sonnet-4-5-20250929",
+      "provider": "Anthropic",
+      "status_to": "deprecated",
+      "successor": "claude-sonnet-5-5",
+      "sunset_date": "2026-11-30"
+    },
+    {
+      "model_id": "gemini-1.5-flash",
+      "provider": "Google",
+      "status_to": "retired",
+      "successor": null,
+      "sunset_date": "2025-09-29"
+    },
+    {
+      "model_id": "gpt-4-0314",
+      "provider": "OpenAI",
+      "status_to": "retired",
+      "successor": "gpt-5",
+      "sunset_date": "2026-03-26"
+    },
+    {
+      "model_id": "gpt-4o",
+      "provider": "OpenAI",
+      "status_to": "deprecated",
+      "successor": "gpt-6-luna",
+      "sunset_date": "2027-01-14"
+    },
+    {
+      "model_id": "text-davinci-003",
+      "provider": "OpenAI",
+      "status_to": "retired",
+      "successor": "gpt-3.5-turbo-instruct",
+      "sunset_date": "2024-01-04"
+    }
+  ],
+  "scan_date": "2026-11-13",
+  "total_references": 9
+}
